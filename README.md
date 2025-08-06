@@ -34,7 +34,7 @@ Cityscapes is a popular benchmark dataset for semantic segmentation in autonomou
 - The **validation set** is used for performance evaluation.  
 - Each image is annotated with **20 semantic classes** (e.g., building, road, car, pedestrian, etc.)
 
-To accommodate FPGA limitations, **testing images are resized to 64×64**. However, we provide training images at multiple resolutions (2×, 4×, 8×) and **encourage participants to leverage these high-resolution variants to enhance model performance**.
+To accommodate FPGA limitations, **testing images are resized to 64×64**. However, we provide training images at multiple resolutions (2×, 4×) and **encourage participants to leverage these high-resolution variants to enhance model performance**.
 
 ---
 
