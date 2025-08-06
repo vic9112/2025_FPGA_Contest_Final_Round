@@ -41,4 +41,5 @@ To accommodate FPGA limitations, **testing images are resized to 32×64**. Howev
 ## Accuracy Scoring System & Dataset
 
 The dataset and evaluation system are hosted on **Kaggle**, consistent with the setup used in the qualifying round.
+
 [Kaggle Competition Page](https://www.kaggle.com/t/195ff157a94e42448487db92f612b4ff)
