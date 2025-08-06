@@ -7,7 +7,7 @@
 Submissions will be evaluated based on **semantic accuracy**, **latency**, and compliance with **FPGA resource constraints**. The final score is determined using the following rules:
 
 ### Scoring Rule
-All four resources reported by `vynth` must be ≤ 80% of the target FPGA's capacity — identical to the requirement in the qualifying round.
+All four resources reported by `vynth` must be ≤ 75% of the target FPGA's capacity — identical to the requirement in the [qualifying round](https://github.com/nycu-pcs-lab/FPGA_Challenge2025_Qualifying_Round_Challenge).
 - Target FPGA: Alveo U55C
 
 - If **FPS ≥ 60**:  
@@ -19,7 +19,7 @@ All four resources reported by `vynth` must be ≤ 80% of the target FPGA's capa
 ### Definitions
 - **mIoU**: Mean Intersection over Union, a measure of semantic segmentation accuracy.  
 - **FPS**: Frames Per Second, calculated as `1 / latency`  
-  - Latency = Clock period from `csynth` × Average cycle count over 5 images from `cosim` — identical to the requirement in the qualifying round.
+  - Latency = Clock period from `csynth` × Average cycle count over 5 images from `cosim` — identical to the requirement in the [qualifying round](https://github.com/nycu-pcs-lab/FPGA_Challenge2025_Qualifying_Round_Challenge).
 
 This scoring strategy prioritizes real-time performance (≥ 60 FPS), then rewards improved segmentation accuracy. Submissions below 60 FPS will be proportionally penalized.
 
@@ -34,7 +34,7 @@ Cityscapes is a popular benchmark dataset for semantic segmentation in autonomou
 - The **validation set** is used for performance evaluation.  
 - Each image is annotated with **20 semantic classes** (e.g., building, road, car, pedestrian, etc.)
 
-To accommodate FPGA limitations, **testing images are resized to 32×64**. However, we provide training images at multiple resolutions (2×, 4×, 8×) and **encourage participants to leverage these high-resolution variants to enhance model performance**.
+To accommodate FPGA limitations, **testing images are resized to 64×64**. However, we provide training images at multiple resolutions (2×, 4×, 8×) and **encourage participants to leverage these high-resolution variants to enhance model performance**.
 
 ---
 
@@ -42,4 +42,4 @@ To accommodate FPGA limitations, **testing images are resized to 32×64**. Howev
 
 The dataset and evaluation system are hosted on **Kaggle**, consistent with the setup used in the qualifying round.
 
-[Kaggle Competition Page](https://www.kaggle.com/t/195ff157a94e42448487db92f612b4ff)
+
