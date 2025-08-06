@@ -35,11 +35,14 @@ Cityscapes is a popular benchmark dataset for semantic segmentation in autonomou
 - Each image is annotated with **20 semantic classes** (e.g., building, road, car, pedestrian, etc.)
 
 To accommodate FPGA limitations, **testing images are resized to 64×64**. However, we provide training images at multiple resolutions (2×, 4×) and **encourage participants to leverage these high-resolution variants to enhance model performance**.
+![img1](visualize_predictions.png)
+
 
 ---
 
 ## Accuracy Scoring System & Dataset
 
-The dataset and evaluation system are hosted on **Kaggle**, consistent with the setup used in the qualifying round.
+The dataset and evaluation system are hosted on **Kaggle**, same as the setup used in the [qualifying round](https://github.com/nycu-pcs-lab/FPGA_Challenge2025_Qualifying_Round_Challenge)
 
+[Kaggle Competition Page](https://www.kaggle.com/t/195ff157a94e42448487db92f612b4ff)
 
