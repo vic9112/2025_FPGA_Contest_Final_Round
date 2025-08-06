@@ -8,6 +8,7 @@ Submissions will be evaluated based on **semantic accuracy**, **latency**, and c
 
 ### Scoring Rule
 All four resources reported by `vynth` must be ≤ 80% of the target FPGA's capacity — identical to the requirement in the qualifying round.
+- Target FPGA: Alveo U55C
 
 - If **FPS ≥ 60**:  
   **Score = mIoU**
@@ -40,3 +41,4 @@ To accommodate FPGA limitations, **testing images are resized to 32×64**. Howev
 ## Accuracy Scoring System & Dataset
 
 The dataset and evaluation system are hosted on **Kaggle**, consistent with the setup used in the qualifying round.
+[Kaggle Competition Page](https://www.kaggle.com/t/195ff157a94e42448487db92f612b4ff)
