@@ -44,5 +44,4 @@ To accommodate FPGA limitations, **testing images are resized to 64×64**. Howev
 
 The dataset and evaluation system are hosted on **Kaggle**, same as the setup used in the [qualifying round](https://github.com/nycu-pcs-lab/FPGA_Challenge2025_Qualifying_Round_Challenge)
 
-[Kaggle Competition Page](https://www.kaggle.com/t/195ff157a94e42448487db92f612b4ff)
 
