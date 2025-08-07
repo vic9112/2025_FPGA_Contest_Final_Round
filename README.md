@@ -19,7 +19,7 @@ All four resources reported by `vynth` must be ≤ 75% of the target FPGA's capa
 ### Definitions
 - **mIoU**: Mean Intersection over Union, a measure of semantic segmentation accuracy.  
 - **FPS**: Frames Per Second, calculated as `1 / latency`  
-  - Latency = Clock period from `csynth` × Average cycle count over 5 images from `cosim` — identical to the requirement in the [qualifying round](https://github.com/nycu-pcs-lab/FPGA_Challenge2025_Qualifying_Round_Challenge).
+  - Latency = Max Latency from `csynth` Report different from the requirement in the [qualifying round](https://github.com/nycu-pcs-lab/FPGA_Challenge2025_Qualifying_Round_Challenge), as the cosim takes alot of time to finish.
 
 This scoring strategy prioritizes real-time performance (≥ 60 FPS), then rewards improved segmentation accuracy. Submissions below 60 FPS will be proportionally penalized.
 
@@ -44,4 +44,4 @@ To accommodate FPGA limitations, **testing images are resized to 64×64**. Howev
 
 The dataset and evaluation system are hosted on **Kaggle**, same as the setup used in the [qualifying round](https://github.com/nycu-pcs-lab/FPGA_Challenge2025_Qualifying_Round_Challenge)
 
-
+[Kaggle Competition Page](https://www.kaggle.com/t/195ff157a94e42448487db92f612b4ff)
