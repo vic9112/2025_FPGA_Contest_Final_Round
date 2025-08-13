@@ -47,6 +47,6 @@ To accommodate FPGA limitations, **testing images are resized to 64×64**. Howev
 
 ## Accuracy Scoring System & Dataset
 
-The dataset and evaluation system are hosted on **Kaggle**, same as the setup used in the [qualifying round](https://github.com/nycu-pcs-lab/FPGA_Challenge2025_Qualifying_Round_Challenge)
+- The dataset and evaluation system are hosted on the [Kaggle Competition Page](https://www.kaggle.com/t/195ff157a94e42448487db92f612b4ff), same as the setup used in the [qualifying round](https://github.com/nycu-pcs-lab/FPGA_Challenge2025_Qualifying_Round_Challenge)
+- You can import and run the [Jupyter notebook](https://github.com/nycu-pcs-lab/FPGA_Challenge2025_Final_Round_Challenge/blob/main/cityscape_qkeras_hls4ml_endtoend.ipynb) on Kaggle to see an end-to-end workflow example.
 
-[Kaggle Competition Page](https://www.kaggle.com/t/195ff157a94e42448487db92f612b4ff)
