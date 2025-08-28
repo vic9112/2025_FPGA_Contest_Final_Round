@@ -4,29 +4,27 @@
 
 ## 🏆 Evaluation Criteria
 
-Submissions will be evaluated based on **semantic accuracy**, **latency**, and compliance with **FPGA resource constraints**. The final score is determined using the following rules:
-
-### Scoring Rule
-All four resources reported by `vynth` must be ≤ 75% of the target FPGA's capacity — identical to the requirement in the [qualifying round](https://github.com/nycu-pcs-lab/FPGA_Challenge2025_Qualifying_Round_Challenge).
+Submissions will be evaluated based on **semantic accuracy**, **latency**, and compliance with **FPGA resource constraints**. 
+1. **semantic accuracy**:
+ - **mIoU**: Mean Intersection over Union, a measure of semantic segmentation accuracy.
+2.  **latency**:
+   - Latency = Max Latency from `csynth` Report different from the requirement in the [qualifying round](https://github.com/nycu-pcs-lab/FPGA_Challenge2025_Qualifying_Round_Challenge), as the RTL simulation takes a lot of time to finish.
+  - The csynth report is at `myproject_prj/solution1/syn/report/myproject_csynth.rpt`
+  - Remember to set both the cosim FLAG and validation FPGA to 0 to skip the RTL simulation. <div style="border:8px solid black; display:inline-block; padding:4px;">
+  <img src="build_prj_tcl_FLAGS.png" alt="img" width="400"/></div>
+3. **FPGA resource constraints**:
+- All four resources reported by `vynth` must be ≤ 75% of the target FPGA's capacity — identical to the requirement in the [qualifying round](https://github.com/nycu-pcs-lab/FPGA_Challenge2025_Qualifying_Round_Challenge).
 - Target FPGA: Alveo U55C
 
-- If **FPS ≥ 60**:  
+
+The final score is determined using the following rules:
+- If **FPS (1/latency) ≥ 60**:  
   **Score = mIoU**
 
 - If **FPS < 60**:  
   **Score = mIoU × (FPS / 60)**
   
 This scoring strategy prioritizes real-time performance (≥ 60 FPS), then rewards improved segmentation accuracy. Submissions below 60 FPS will be proportionally penalized.
-### Definitions
-- **mIoU**: Mean Intersection over Union, a measure of semantic segmentation accuracy.  
-- **FPS**: Frames Per Second, calculated as `1 / latency`  
-  - Latency = Max Latency from `csynth` Report different from the requirement in the [qualifying round](https://github.com/nycu-pcs-lab/FPGA_Challenge2025_Qualifying_Round_Challenge), as the cosim takes a lot of time to finish.
-  - The csynth report is at `myproject_prj/solution1/syn/report/myproject_csynth.rpt`
-  - Remember to set both the cosim FLAG and validation FPGA to 0 to skip the RTL simulation.
-  <div style="border:8px solid black; display:inline-block; padding:4px;">
-  <img src="build_prj_tcl_FLAGS.png" alt="img" width="400"/>
-</div>
-  
 
 ---
 
